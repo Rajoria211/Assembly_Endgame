@@ -1,16 +1,69 @@
-# React + Vite
+# 🎮 Assembly: Endgame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Hangman-style word-guessing game built with **React** and **Vite**. Guess the word before losing all programming languages!
 
-Currently, two official plugins are available:
+## ⚡ Quick Start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+git clone https://github.com/yourusername/assembly_endgame.git
+cd assembly_endgame
+npm install
+npm run dev
+```
 
-## React Compiler
+## 🎮 How It Works
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Guess letters to reveal a random word (485-word vocabulary)
+- 8 wrong guesses allowed before game over
+- Each wrong guess eliminates a programming language
+- Languages at stake: HTML → CSS → JavaScript → React → TypeScript → Node.js → Python → Ruby → Assembly
+- Real-time feedback with witty farewell messages
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** - Functional components with hooks (useState)
+- **Vite 7** - Fast build tool and dev server
+- **JavaScript ES6+** - Dynamic array methods, state logic
+- **CSS** - Responsive, accessible styling
+- **clsx** - Conditional class names
+
+## 📂 Project Structure
+
+```
+src/
+├── App.jsx        # Main game logic & component
+├── utils.js       # Random word & farewell text helpers
+├── languages.js   # Programming languages data
+├── words.js       # 485-word vocabulary
+└── App.css        # Game styling
+```
+
+## 🎓 Key Features
+
+✅ Dynamic word & button generation  
+✅ State management with React hooks  
+✅ Case-handling logic (uppercase guesses vs lowercase word)  
+✅ Accessibility (ARIA labels, live regions)  
+✅ Responsive, mobile-friendly UI  
+✅ Color-coded language chips
+
+## 📋 Available Scripts
+
+```bash
+npm run dev      # Start dev server
+npm run build    # Production build
+npm run lint     # ESLint check
+npm run preview  # Preview production build
+```
+
+## 🎓 Skills Demonstrated
+
+- React fundamentals & state management
+- JavaScript array methods (filter, map, every, forEach)
+- Problem-solving (case normalization across comparisons)
+- Responsive UI/UX design & accessibility
+- Modern developer tools (Vite, ESLint, Git)
+
+---
+
+Built by Priyanshu Rajoria | [LinkedIn](https://www.linkedin.com/in/priyanshu-rajoria/) | [GitHub](https://github.com/Rajoria211)
